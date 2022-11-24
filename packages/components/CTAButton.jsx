@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CTAButton({ children, onClick }) {
   return (
     <button

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import Container from "./Container";
 
 export default function Header() {
@@ -13,6 +12,7 @@ export default function Header() {
             </div>
           </Link>
         </div>
+
         <div>MENU</div>
       </Container>
     </header>
