@@ -5,14 +5,14 @@ import Header from "./Header";
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <Header />
 
-      <div className="flex flex-col items-center">
+      <main className="flex flex-col mb-auto items-center">
         <Container className="w-full">{children}</Container>
-      </div>
+      </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
