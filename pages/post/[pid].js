@@ -21,7 +21,7 @@ export default function Post({ posts, users }) {
       <div className="pb-8">
         <CTAButton onClick={() => router.back()}>BACK</CTAButton>
       </div>
-      <Container className="grid  px-4">
+      <Container className="grid px-4 md:px-0">
         <div className="grid border border-zinc-400 p-4 gap-4">
           <div className="text-orange-700 font-bold text-left">add comment</div>
           <Comment />
