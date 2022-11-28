@@ -3,7 +3,7 @@ import LastPost from "../packages/components/LastPost";
 import CTAButton from "../packages/components/CTAButton";
 import RenderPostList from "../packages/components/RenderPostList";
 
-export default function Home({ posts, users }) {
+export default function Home({ users, posts }) {
   return (
     <div>
       <Head>
@@ -13,19 +13,9 @@ export default function Home({ posts, users }) {
 
       <LastPost posts={posts} users={users} />
 
-      <RenderPostList posts={posts} users={users} fromPost={1} untilPost={4} />
+      <RenderPostList posts={posts} users={users} fromPost={1} untilPost={7} />
 
       <CTAButton>READ MORE STORIES</CTAButton>
     </div>
   );
 }
-
-Home.getInitialProps = async (ctx) => {
-  const posts = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const jsonPosts = await posts.json();
-
-  const users = await fetch("https://jsonplaceholder.typicode.com/users");
-  const jsonUsers = await users.json();
-
-  return { posts: jsonPosts, users: jsonUsers };
-};

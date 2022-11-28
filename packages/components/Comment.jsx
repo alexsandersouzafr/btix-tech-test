@@ -1,14 +1,10 @@
 import React from "react";
 
-export default function Comment() {
+export default function Comment({ user, comment }) {
   return (
     <div>
-      <div className="font-bold">Fulano de Tal:</div>
-      <div>
-        But I must explain to you how all this mistaken idea of denouncing
-        pleasure and praising pain was born and I will give you a complete
-        account of the system.
-      </div>
+      <div className="font-bold">{user}:</div>
+      <div>{comment}</div>
       <hr />
     </div>
   );

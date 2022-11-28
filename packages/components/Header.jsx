@@ -12,8 +12,6 @@ export default function Header() {
             </div>
           </Link>
         </div>
-
-        <div>MENU</div>
       </Container>
     </header>
   );
