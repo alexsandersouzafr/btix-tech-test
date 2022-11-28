@@ -14,8 +14,6 @@ export default function Home({ users, posts }) {
       <LastPost posts={posts} users={users} />
 
       <RenderPostList posts={posts} users={users} fromPost={1} untilPost={7} />
-
-      <CTAButton>READ MORE STORIES</CTAButton>
     </div>
   );
 }
