@@ -22,7 +22,7 @@ export default function Post({ users, posts }) {
         <CTAButton onClick={() => router.back()}>BACK</CTAButton>
       </div>
 
-      <CommentBox postId={pid} />
+      <CommentBox postId={parseInt(pid) + 1} />
     </div>
   );
 }

@@ -3,10 +3,11 @@ import Comment from "./Comment";
 import Container from "./Container";
 
 export default function CommentBox({ postId }) {
+  console.log(postId);
   const [comments, setComments] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${postId + 1}/comments`)
+    fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
       .then((res) => res.json())
       .then((data) => setComments(data))
       .then(setLoading(false))
