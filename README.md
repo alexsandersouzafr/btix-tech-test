@@ -2,7 +2,7 @@
 
 Teste Técnico por Alexsander Souza
 
-Este projeto consiste em uma página inicial com acesso a blogposts e uma página dinâmica para cada blogpost. As páginas de cada blogpost exibem o corpo, autor e comentários de cada blog.
+Este projeto consiste em uma página inicial com acesso a blogposts e uma página dinâmica para cada blogpost. As páginas de cada blogpost exibem o corpo, autor e comentários de cada blogpost.
 
 ## Tecnologias Usadas
 
